@@ -2,7 +2,7 @@
 
 .services {
   background-color: #13171c;
-  background-image: url("resources/doodle-image.svg");
+  background-image: url("../resources/doodle-image.svg");
   height: auto;
 
   display: flex;
