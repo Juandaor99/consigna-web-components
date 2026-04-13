@@ -1,0 +1,85 @@
+/* Welcome */
+
+.welcome {
+  height: 724px;
+  background-color: #13171c;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1440px) {
+  .welcome {
+    height: 892px;
+  }
+}
+
+.welcome__content {
+  margin: 70px 44px 0px 44px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 54px;
+}
+
+@media (min-width: 1440px) {
+  .welcome__content {
+    margin: 0 auto;
+    margin-top: 221px;
+    flex-direction: row;
+    gap: 100px;
+  }
+}
+
+.welcome__content-text {
+  margin: 0;
+  min-width: 288px;
+
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 75px;
+  color: #ffffff;
+}
+
+@media (min-width: 1440px) {
+  .welcome__content-text {
+    width: 586px;
+    font-size: 96px;
+    text-align: left;
+  }
+}
+
+.text-different-color {
+  color: #00adb5;
+}
+
+.welcome__content-image {
+  width: 219px;
+  height: 211px;
+}
+
+@media (min-width: 1440px) {
+  .welcome__content-image {
+    width: 353px;
+    height: 340px;
+  }
+}
+
+.welcome__content-image-shadow {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .welcome__content-image-shadow {
+    display: inherit;
+    position: absolute;
+    height: 24px;
+    width: 348px;
+    top: 838px;
+    right: 250px;
+  }
+}

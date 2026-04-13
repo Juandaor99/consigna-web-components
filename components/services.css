@@ -1,0 +1,140 @@
+/* My Services */
+
+.services {
+  background-color: #13171c;
+  background-image: url("/resources/doodle-image.svg");
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 66px;
+  padding: 82px 25px 126px 25px;
+}
+
+.services__title {
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 42px;
+  font-weight: 700;
+  color: #eeeeee;
+}
+
+.services__title2 {
+  color: #00adb5;
+}
+
+.services__cards {
+  width: auto;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+@media (min-width: 1440px) {
+  .services__cards {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 45px;
+  }
+}
+
+.services__cards-extra {
+  width: auto;
+  height: auto;
+  /* display: none; */
+  flex-direction: column;
+  gap: 48px;
+}
+
+@media (min-width: 1440px) {
+  .services__cards-extra {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* flex-direction: row; */
+    gap: 45px;
+  }
+}
+
+/* Services - Cards */
+
+.card {
+  background-color: rgba(57, 62, 70, 0.5);
+  width: 324px;
+  min-height: 481px;
+  border-radius: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 42px 30px;
+
+  font-family: "Poppins";
+  color: #eeeeee;
+}
+
+.card-image {
+  width: 265px;
+  height: 158px;
+}
+
+.card-title {
+  margin: 0;
+
+  font-size: 33px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-text {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+/* Services - Buttons */
+
+.services__buttons {
+}
+
+.button-container {
+  gap: 10px;
+  align-items: center;
+}
+
+.downArrow-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.upArrow-container {
+  display: none;
+  gap: 10px;
+  align-items: center;
+}
+
+.button-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.downArrow-button,
+.upArrow-button {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 400;
+  color: #eeeeee;
+  background-color: transparent;
+  border: none;
+}

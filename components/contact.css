@@ -1,0 +1,163 @@
+/* Contact Section */
+
+.contact {
+  background-color: #13171c;
+  height: 997px;
+  width: auto;
+  padding: 39px 30px;
+
+  font-family: "Poppins";
+  color: #eeeeee;
+  font-size: 18px;
+  font-weight: 700;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1440px) {
+  .contact {
+    height: 1024px;
+    justify-content: center;
+    padding: 39px 96px;
+  }
+}
+
+.contact__container {
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 39px;
+}
+
+@media (min-width: 1440px) {
+  .contact__container {
+    max-width: none;
+
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.contact__title {
+  margin: 0;
+
+  font-size: 42px;
+  text-align: center;
+}
+
+@media (min-width: 1440px) {
+  .contact__title {
+    font-size: 64px;
+  }
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .contact__form {
+    height: 516px;
+    max-width: 600px;
+    gap: 24px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+      "f1 f2"
+      "f3 f3"
+      "b x";
+  }
+}
+
+.contact__form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 1440px) {
+  .form-field-1 {
+    grid-area: f1;
+  }
+
+  .form-field-2 {
+    grid-area: f2;
+  }
+
+  .form-field-3 {
+    grid-area: f3;
+  }
+}
+
+.form-label {
+}
+
+.form-input {
+  background-color: #393e4680;
+  border-color: transparent;
+  height: 59px;
+  border-radius: 16px;
+  padding: 16px 24px;
+  width: 100%;
+
+  font-family: "Poppins";
+  color: #eeeeee;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.form-textarea {
+  background-color: #393e4680;
+  border-color: transparent;
+  height: 280px;
+  border-radius: 16px;
+  padding: 16px 24px;
+
+  font-family: "Poppins";
+  color: #eeeeee;
+  font-size: 18px;
+  font-weight: 700;
+  resize: none;
+}
+
+.contact__form-button {
+  background-color: #00adb5;
+  border-color: transparent;
+  height: 55px;
+  border-radius: 16px;
+  padding: 16px 24px;
+
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 700;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (min-width: 1440px) {
+  .contact__form-button {
+    grid-area: b;
+  }
+}
+
+.form-button-icon {
+  height: 24px;
+  width: 24px;
+}
